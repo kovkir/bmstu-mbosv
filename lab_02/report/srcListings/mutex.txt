@@ -1,0 +1,292 @@
+Starting increase_counter with pid 1
+  1:	proc  0 (:init::1) mutex.pml:54 (state 1)	[(run increase_counter())]
+		shared_data = 0
+		mutex = 0
+  2:	proc  1 (increase_counter:1) mutex.pml:27 (state 1)	[((i<2))]
+		shared_data = 0
+		mutex = 0
+Starting reduce_counter with pid 2
+  3:	proc  0 (:init::1) mutex.pml:55 (state 2)	[(run reduce_counter())]
+		shared_data = 0
+		mutex = 0
+  4:	proc  1 (increase_counter:1) mutex.pml:29 (state 12)	[.(goto)]
+		shared_data = 0
+		mutex = 0
+  5:	proc  1 (increase_counter:1) mutex.pml:28 (state 2)	[((mutex==0))]
+		shared_data = 0
+		mutex = 0
+  6:	proc  1 (increase_counter:1) mutex.pml:28 (state 3)	[mutex = 1]
+		shared_data = 0
+		mutex = 1
+  7:	proc  2 (reduce_counter:1) mutex.pml:42 (state 1)	[((i<2))]
+		shared_data = 0
+		mutex = 1
+  8:	proc  2 (reduce_counter:1) mutex.pml:44 (state 12)	[.(goto)]
+		shared_data = 0
+		mutex = 1
+  9:	proc  2 (reduce_counter:1) mutex.pml:43 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 10:	proc  2 (reduce_counter:1) mutex.pml:43 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 11:	proc  2 (reduce_counter:1) mutex.pml:43 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 12:	proc  2 (reduce_counter:1) mutex.pml:43 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 13:	proc  2 (reduce_counter:1) mutex.pml:43 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 14:	proc  2 (reduce_counter:1) mutex.pml:43 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 15:	proc  2 (reduce_counter:1) mutex.pml:43 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 16:	proc  2 (reduce_counter:1) mutex.pml:43 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 17:	proc  2 (reduce_counter:1) mutex.pml:43 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 18:	proc  2 (reduce_counter:1) mutex.pml:43 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 19:	proc  2 (reduce_counter:1) mutex.pml:43 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 20:	proc  2 (reduce_counter:1) mutex.pml:43 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 21:	proc  2 (reduce_counter:1) mutex.pml:43 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 22:	proc  2 (reduce_counter:1) mutex.pml:43 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 23:	proc  1 (increase_counter:1) mutex.pml:28 (state 13)	[break]
+		shared_data = 0
+		mutex = 1
+ 24:	proc  2 (reduce_counter:1) mutex.pml:43 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 25:	proc  2 (reduce_counter:1) mutex.pml:43 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 26:	proc  2 (reduce_counter:1) mutex.pml:43 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 27:	proc  2 (reduce_counter:1) mutex.pml:43 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 28:	proc  1 (increase_counter:1) mutex.pml:29 (state 14)	[temp = shared_data]
+		shared_data = 0
+		mutex = 1
+ 29:	proc  2 (reduce_counter:1) mutex.pml:43 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 30:	proc  2 (reduce_counter:1) mutex.pml:43 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 31:	proc  1 (increase_counter:1) mutex.pml:30 (state 15)	[temp = (temp+1)]
+		shared_data = 0
+		mutex = 1
+ 32:	proc  2 (reduce_counter:1) mutex.pml:43 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 33:	proc  2 (reduce_counter:1) mutex.pml:43 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 34:	proc  1 (increase_counter:1) mutex.pml:31 (state 16)	[shared_data = temp]
+		shared_data = 1
+		mutex = 1
+ 35:	proc  2 (reduce_counter:1) mutex.pml:43 (state 6)	[else]
+		shared_data = 1
+		mutex = 1
+ 36:	proc  2 (reduce_counter:1) mutex.pml:43 (state 7)	[(1)]
+		shared_data = 1
+		mutex = 1
+ 37:	proc  2 (reduce_counter:1) mutex.pml:43 (state 6)	[else]
+		shared_data = 1
+		mutex = 1
+ 38:	proc  2 (reduce_counter:1) mutex.pml:43 (state 7)	[(1)]
+		shared_data = 1
+		mutex = 1
+ 39:	proc  1 (increase_counter:1) mutex.pml:32 (state 17)	[mutex = 0]
+		shared_data = 1
+		mutex = 0
+ 40:	proc  2 (reduce_counter:1) mutex.pml:43 (state 2)	[((mutex==0))]
+		shared_data = 1
+		mutex = 0
+ 41:	proc  2 (reduce_counter:1) mutex.pml:43 (state 3)	[mutex = 1]
+		shared_data = 1
+		mutex = 1
+ 42:	proc  2 (reduce_counter:1) mutex.pml:43 (state 13)	[break]
+		shared_data = 1
+		mutex = 1
+ 43:	proc  2 (reduce_counter:1) mutex.pml:44 (state 14)	[temp = shared_data]
+		shared_data = 1
+		mutex = 1
+ 44:	proc  2 (reduce_counter:1) mutex.pml:45 (state 15)	[temp = (temp-1)]
+		shared_data = 1
+		mutex = 1
+ 45:	proc  2 (reduce_counter:1) mutex.pml:46 (state 16)	[shared_data = temp]
+		shared_data = 0
+		mutex = 1
+ 46:	proc  2 (reduce_counter:1) mutex.pml:47 (state 17)	[mutex = 0]
+		shared_data = 0
+		mutex = 0
+ 47:	proc  2 (reduce_counter:1) mutex.pml:48 (state 18)	[i = (i+1)]
+		shared_data = 0
+		mutex = 0
+ 48:	proc  2 (reduce_counter:1) mutex.pml:51 (state 22)	[.(goto)]
+		shared_data = 0
+		mutex = 0
+ 49:	proc  1 (increase_counter:1) mutex.pml:33 (state 18)	[i = (i+1)]
+		shared_data = 0
+		mutex = 0
+ 50:	proc  2 (reduce_counter:1) mutex.pml:42 (state 1)	[((i<2))]
+		shared_data = 0
+		mutex = 0
+ 51:	proc  2 (reduce_counter:1) mutex.pml:44 (state 12)	[.(goto)]
+		shared_data = 0
+		mutex = 0
+ 52:	proc  1 (increase_counter:1) mutex.pml:36 (state 22)	[.(goto)]
+		shared_data = 0
+		mutex = 0
+ 53:	proc  1 (increase_counter:1) mutex.pml:27 (state 1)	[((i<2))]
+		shared_data = 0
+		mutex = 0
+ 54:	proc  2 (reduce_counter:1) mutex.pml:43 (state 2)	[((mutex==0))]
+		shared_data = 0
+		mutex = 0
+ 55:	proc  2 (reduce_counter:1) mutex.pml:43 (state 3)	[mutex = 1]
+		shared_data = 0
+		mutex = 1
+ 56:	proc  1 (increase_counter:1) mutex.pml:29 (state 12)	[.(goto)]
+		shared_data = 0
+		mutex = 1
+ 57:	proc  1 (increase_counter:1) mutex.pml:28 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 58:	proc  1 (increase_counter:1) mutex.pml:28 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 59:	proc  2 (reduce_counter:1) mutex.pml:43 (state 13)	[break]
+		shared_data = 0
+		mutex = 1
+ 60:	proc  1 (increase_counter:1) mutex.pml:28 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 61:	proc  1 (increase_counter:1) mutex.pml:28 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 62:	proc  1 (increase_counter:1) mutex.pml:28 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 63:	proc  1 (increase_counter:1) mutex.pml:28 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 64:	proc  2 (reduce_counter:1) mutex.pml:44 (state 14)	[temp = shared_data]
+		shared_data = 0
+		mutex = 1
+ 65:	proc  1 (increase_counter:1) mutex.pml:28 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 66:	proc  1 (increase_counter:1) mutex.pml:28 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 67:	proc  2 (reduce_counter:1) mutex.pml:45 (state 15)	[temp = (temp-1)]
+		shared_data = 0
+		mutex = 1
+ 68:	proc  1 (increase_counter:1) mutex.pml:28 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 69:	proc  1 (increase_counter:1) mutex.pml:28 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 70:	proc  1 (increase_counter:1) mutex.pml:28 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 71:	proc  1 (increase_counter:1) mutex.pml:28 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 72:	proc  1 (increase_counter:1) mutex.pml:28 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 73:	proc  1 (increase_counter:1) mutex.pml:28 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 74:	proc  1 (increase_counter:1) mutex.pml:28 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 75:	proc  1 (increase_counter:1) mutex.pml:28 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 76:	proc  1 (increase_counter:1) mutex.pml:28 (state 6)	[else]
+		shared_data = 0
+		mutex = 1
+ 77:	proc  1 (increase_counter:1) mutex.pml:28 (state 7)	[(1)]
+		shared_data = 0
+		mutex = 1
+ 78:	proc  2 (reduce_counter:1) mutex.pml:46 (state 16)	[shared_data = temp]
+		shared_data = -1
+		mutex = 1
+ 79:	proc  2 (reduce_counter:1) mutex.pml:47 (state 17)	[mutex = 0]
+		shared_data = -1
+		mutex = 0
+ 80:	proc  1 (increase_counter:1) mutex.pml:28 (state 2)	[((mutex==0))]
+		shared_data = -1
+		mutex = 0
+ 81:	proc  1 (increase_counter:1) mutex.pml:28 (state 3)	[mutex = 1]
+		shared_data = -1
+		mutex = 1
+ 82:	proc  1 (increase_counter:1) mutex.pml:28 (state 13)	[break]
+		shared_data = -1
+		mutex = 1
+ 83:	proc  2 (reduce_counter:1) mutex.pml:48 (state 18)	[i = (i+1)]
+		shared_data = -1
+		mutex = 1
+ 84:	proc  1 (increase_counter:1) mutex.pml:29 (state 14)	[temp = shared_data]
+		shared_data = -1
+		mutex = 1
+ 85:	proc  2 (reduce_counter:1) mutex.pml:51 (state 22)	[.(goto)]
+		shared_data = -1
+		mutex = 1
+ 86:	proc  2 (reduce_counter:1) mutex.pml:49 (state 19)	[else]
+		shared_data = -1
+		mutex = 1
+ 87:	proc  2 (reduce_counter:1) mutex.pml:49 (state 20)	[goto :b2]
+		shared_data = -1
+		mutex = 1
+ 88:	proc  1 (increase_counter:1) mutex.pml:30 (state 15)	[temp = (temp+1)]
+		shared_data = -1
+		mutex = 1
+ 89:	proc  1 (increase_counter:1) mutex.pml:31 (state 16)	[shared_data = temp]
+		shared_data = 0
+		mutex = 1
+ 90:	proc  1 (increase_counter:1) mutex.pml:32 (state 17)	[mutex = 0]
+		shared_data = 0
+		mutex = 0
+ 91:	proc  1 (increase_counter:1) mutex.pml:33 (state 18)	[i = (i+1)]
+		shared_data = 0
+		mutex = 0
+ 92:	proc  1 (increase_counter:1) mutex.pml:36 (state 22)	[.(goto)]
+		shared_data = 0
+		mutex = 0
+ 93:	proc  1 (increase_counter:1) mutex.pml:34 (state 19)	[else]
+		shared_data = 0
+		mutex = 0
+ 94:	proc  1 (increase_counter:1) mutex.pml:34 (state 20)	[goto :b0]
+		shared_data = 0
+		mutex = 0
+ 95:	proc  0 (:init::1) mutex.pml:56 (state 3)	[((_nr_pr==1))]
+		shared_data = 0
+		mutex = 0
+      shared_data = 0
+ 96:	proc  0 (:init::1) mutex.pml:56 (state 4)	[printf('shared_data = %d\\n',shared_data)]
+		shared_data = 0
+		mutex = 0
+3 processes created
